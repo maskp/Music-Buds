@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+  <link rel="stylesheet" href="styl.css">
+  <title>Member list</title>
+</head>
+<body>
+<nav id="nav">
+              <a href="frontin">Home</a>
+              <a href="memberlist">memberlist</a>
+              <a href="getlikes/{{userid}}" >Get likes</a>
+              </nav>
+            <ul>
+                {{#users}}
+                <li>email: {{email}} username:<a href='memberlist/{{id}}'>{{username}}</a> </li><br><br>
+                {{/users}}
+            </ul>
+</body>
+</html>

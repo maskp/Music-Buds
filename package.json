@@ -1,0 +1,26 @@
+{
+  "name": "wdi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
+  },
+    "engines": {
+    "node": "6.8.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "method-override": "^2.3.7",
+    "mustache-express": "^1.2.4",
+    "node-fetch": "^1.6.3",
+    "node-rest-client": "^2.0.1",
+    "pg-promise": "^5.4.3"
+  }
+}

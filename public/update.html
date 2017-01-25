@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update password</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+  <link rel="stylesheet" href="styl.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="scr.js"></script>
+</head>
+<body>
+<center>
+<div>
+           <h3>Update password:</h3>
+            <form method="post" action="/update?_method=PUT" class="pure-form pure-form-stacked" style="background:darkgray;">
+                        Email: <input type="email" id="email" name="email" placeholder="batman@ga.co">
+                        Password: <input type="password" name='password' placeholder="new password" id="newpass">
+                        Question: <input type="text" name="question" placeholder="your question"><br>
+                        <input type="submit" value="submit" id="carnage" class="pure-button"><br><br>
+            </form>
+</div>
+</center>
+  <script>
+      $(function(){
+
+    });
+
+  </script>
+</body>
+</html>

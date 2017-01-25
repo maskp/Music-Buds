@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+  <link rel="stylesheet" href="/styl.css">
+  <title>Single user</title>
+
+</head>
+<body>
+
+
+        <div><h1 id="logo">Music Buds<br><h1></div>
+        <nav id="nav">
+
+<a href="/signin">Home</a>
+<a href="/memberlist">MemberList</a>
+<a href="/signin" style="float:right">logout</a>
+<a href ="/description.html">About</a>
+</nav>
+          <h1 style="font-family: monospace;">Musicians liked by this user:</h1>
+          <center><ul>{{#user}}
+                            <li>Artist Name: {{musician_name}}</li><br>
+                            <li><img src={{musician_image}}></li><br>
+                  {{/user}}
+          </ul>
+          </center>
+
+
+</body>
+</html>

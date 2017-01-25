@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>your likes</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+          <link rel="stylesheet" href="styl.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+  </script>
+           <script src="scr.js"></script>
+</head>
+
+<body>
+<div><h1 id="logo">Music Buds<br><h1></div>
+        <nav id="nav">
+
+<a href="/signin">Home</a>
+<a href="/memberlist">MemberList</a>
+<a href="/signin" style="float:right">logout</a>
+<a href ="/description.html">About</a>
+</nav>
+{{username}}<p id="usrid">{{userid}}</p>
+
+          <p id="para">{{artist_name}}</p>
+          <div id="musicianpic"><img id="image" src={{artist_image}}></div>
+          <input type="button" value="like" id="like" class="pure-button" style="font-family: monospace;"/>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+  <link rel="stylesheet" href="/styl.css">
+  <title>get likes</title>
+</head>
+<body>
+<div><h1 id="logo">Music Buds<br><h1></div>
+
+        <nav id="nav">
+
+<a href="/signin">Home</a>
+<a href="/memberlist">MemberList</a>
+<a href="/signin" style="float:right">Logout</a>
+<a href ="/description.html">About</a>
+</nav>
+<h1 id="scrool">Your Likes Page</h1><hr>
+
+<h3 style="font-family: monospace;font-size:30px">Artists: </h3>
+<table>
+
+{{#data}}
+<tr>
+<td>{{musician_id}}</td>
+<td>{{musician_name}}</td>
+<td><img id="cd" src={{musician_image}}></td>
+<td><form method="post" action='/getlikes/:id?_method=DELETE'>
+<input type="hidden" name="musician_name" value={{musician_name}}>
+<button class="generic-button">Delete</button></td>
+</form>
+</tr>
+{{/data}}
+</table>
+</body>
+</html>

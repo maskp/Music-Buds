@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+  <link rel="stylesheet" href="styl.css">
+  <title>Member list</title>
+</head>
+<body>
+<div><h1 id="logo">Music Buds<br><h1></div>
+        <nav id="nav">
+
+<a href="/signin">Home</a>
+<a href="/memberlist">MemberList</a>
+<a href="/signin" style="float:right">logout</a>
+<a href ="/description.html">About</a>
+</nav>
+<h1 style="font-family: monospace">Members Directory</h1>
+            <ol>
+                {{#users}}
+                <li><a href='memberlist/{{id}}' style="text-decoration: none;color:black;font-family:monospace;font-size: 18px">{{username}}</a> </li><br><br>
+                {{/users}}
+            </ol>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+<link rel="stylesheet" href="styl.css">
+  <title>Sign up</title>
+</head>
+
+<body>
+<div><h1 id="logo">Music Buds<br><h1></div>
+<!-- id | name | email | password | username | question | answers -->
+<div>
+{{message}}
+          <form method="post" action="/signup" class="pure-form pure-form-aligned pure-form-stacked" id="brahma">
+                      Name: <input type="text" placeholder="real name" name="name" required>
+                      Email: <input type="email" placeholder="nakedtruth@mail.gum" name="email" required>
+                      Password: <input type="password" placeholder="villify" name="password" required>
+                      Username: <input type="text" placeholder="Lisa" name="username" required>
+                      Question: <input type="text" placeholder="questions" name="question" required>
+                      Answer: <input type="text" placeholder="answer" name="answer" required>
+          <input type="submit" value="Sign Up">
+          </form>
+</div>
+</body>
+</html>

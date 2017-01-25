@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome page</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+  <link rel="stylesheet" href="styl.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="scr.js"></script>
+
+</head>
+<body>
+
+<div><h1 id="logo">Music Buds<br></h1></div><br>
+
+
+
+        <nav id="nav">
+<a href="/signin">Home</a>
+<a href="/memberlist">MemberList</a>
+<a href="/signin" style="float:right">logout</a>
+<a href ="/description.html">About</a>
+</nav>
+ <span style="font-family: monospace;font-size: 20px;">Welcome</span>  <span id="username">{{username}},<br>
+<p id="userid">{{userid}}</p>
+<form method="post" action="/frontin">
+                    <input type="hidden"  name="username" value={{username}}>
+                    <input type="hidden" name="userid" value={{userid}}>
+                    <input type="text" name="search" id="search" placeholder="Artist">
+                    <input type="submit" value="search" id="submit">
+                    </form>
+                    <!--<p id="para">{{artist_name}}</p>
+                    <div id="musicianpic"><img id="image" src={{artist_image}}></div>
+                     <input type="button" value="like" id="like" class="pure-button"/>-->
+
+
+
+        <!--     <table>
+                      {{#data}}
+              <tr>
+
+              <td>{{musician_name}}</td>
+              <td> <img id="cd" src={{musician_image}}></td>
+              <td><button>delete</button>
+              </tr>
+               {{/data}}
+            <table> -->
+            <button class="pure-button" style="float:right;background:black;color:white;" id="lk-btn">
+          <a href="getlikes/{{userid}}" style="text-decoration: none;font-family:monospace;color:white;font-size:15px">Liked</a></button><br><br>
+         <center> <img id src="WoodenHedge.jpg"/></center>
+
+
+
+
+</body>
+</html>

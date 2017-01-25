@@ -1,0 +1,58 @@
+body{background:lightgray;}
+#musicianpic{width:500px;height:500px;margin:0 auto;}
+
+#username{font-family: monospace;font-style:bold;font-size: 25px;}
+
+#para{text-align: center;font-size:25px;font-family: monospace;font-style: bold;}
+
+#brahma{display:0 auto;background: gray; opacity:.8;}
+
+#like{margin:0 auto;display:block;background:black;color:white;}
+#like:hover{background-color: gray;color:black;}
+
+    img{width:450px;height:450px;}
+
+    img:hover{transform:rotateY(360deg);transition: transform 1s linear;}
+    .disappear{display:none;}
+#cd{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#scrool{
+  font-family: monospace;
+  font-size: 35px;
+}
+#lk-btn:hover{
+  opacity: .6;
+}
+
+#cd:hover{
+transform: rotateZ(720deg);
+transition: transform 2s ease;
+}
+
+ul li{list-style-type: none;}
+
+#userid{display:none;}
+
+#nav{padding:20px;background:black;}
+
+#nav a{text-decoration:none;font-size:20px;margin-left: 20px;color:white;}
+
+#nav a:hover{opacity:.6;}
+
+table tr td{padding: 45px;font-family: monospace;font-size: 20px;}
+table tr th{padding: 45px;}
+
+
+#logo{background:black;color:white;border:1px solid blue;width:150px;height:50px;margin:0 auto;padding:30px;font-family:monospace;font-size: 35px;}
+
+#usrid{display:none;}
+
+#bait{display:none;}
+
+.hvr:hover{color:blue;}
+
+a{font-family: monospace;text-decoration: none;}
